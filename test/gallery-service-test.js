@@ -1,5 +1,7 @@
 'use strict';
 
+//wtf//
+
 const url = `${__API_URL__}/api/gallery`;
 
 describe('Gallery Service', function () {
