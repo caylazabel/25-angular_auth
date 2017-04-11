@@ -1,7 +1,7 @@
 'use strict';
 
 describe('Gallery Item Component', function () {
-  before(()=>{
+  beforeEach( ()=>{
     angular.mock.module('cfgram');
     angular.mock.inject(($rootScope, $componentController, $httpBackend, authService) => {
       this.$rootScope = $rootScope;
