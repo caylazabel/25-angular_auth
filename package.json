@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 25 - Client Side Auth ======",
   "main": "index.js",
+  "engines": { "node": "4.4.7" },
   "scripts": {
     "build": "./node_modules/webpack/bin/webpack.js",
     "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
     "lint": "./node_modules/eslint/bin/eslint.js .",
     "test": "./node_modules/karma/bin/karma start --single-run",
-    "test-watch": "./node_modules/karma/bin/karma start"
+    "test-watch": "./node_modules/karma/bin/karma start",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p --progress"
   },
   "keywords": [],
   "author": "",
